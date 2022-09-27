@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!--
+	Assignment 5
+	Jaedon's Birthday Bash
+	Author: Jaedon Johnson
+	Date: 03/31/2021
+	Due Date: 04/15/2021
+	
+	Filename: rsvp.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="keywords" content="homepage, activities, wishlist, rsvp" />
+   <title>Johnson-Assign 5</title>
+   <link href="johnson_styles.css" rel="stylesheet" />
+   <script src="johnson_script.js"></script>
+</head>
+<body>
+	<header>
+		<h1><img src="johnson_logo.png" alt="my logo"></h1>
+		<h1>April 10th</h1>
+	</header>
+	<nav>
+		
+			<a href="index.html">Homepage</a>
+			<a href="activities.html">Activities</a>
+			<a href="wishlist.html">Wishlist</a>
+			<a href="rsvp.html">RSVP</a>
+			<a href="index.html#faq1">Famous Birthdays</a>
+
+		
+	</nav>
+	<main>
+		<h3>RSVP to Party</h3>
+		<form action="formProcessor.html" method="get" id="orderForm">
+			<fieldset>
+				<legend>Your Contact Information</legend>
+				<label for="custFname">First Name</label>
+				<input type="text" name="firstName" id="custFname">
+				<label for="custLname">Last Name</label>
+				<input type="text" name="lastName" id="custLname">
+				<label for="custEmail">E-Mail Address</label>
+				<input type="email" name="emailAdd" id="custEmail">
+				<label for="custPhone">Phone</label>
+				<input type="tel" name="phone" id="custPhone">
+				<label for="a">Age</label>
+				<input type="number" name="age" id="a" min="1" max="99">
+				<label for="bd">Birthday</label>
+				<input type="date" name="birthday" id="bd">
+				<label for="fc">Favorite color</label>
+				<input type="color" name="favoriteColor" id="fc" value="#ff7f11">
+				<label for="FPG">Favorite Party Game</label>
+				<select name="favoritePartygame" id="FPG">
+					<option value="&nbsp;">&nbsp;</option>
+					<option value="Spider-man Miles Morales">Spider-man Miles Morales</option>
+					<option value="Fortnite">Fortnite</option>
+					<option value="GTAV">GTAV</option>
+					<option value="Star Wars The Force Awakens">Star Wars The Force Awakens</option>
+					<option value="Dragon Ball Fighterz">Dragon Ball Fighterz</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Party Food Information</legend>
+				<div id="food">
+				<p>Choice of entree:</p>
+					<input type="radio" name="Food" id="ccCrab" value="Crab">
+					<label for="ccCrab">Crab</label>
+					<input type="radio" name="Food" id="ccSushi" value="Sushi">
+					<label for="ccSushi">Sushi</label>
+				<br>
+					<input type="radio" name="Food" id="ccSalad" value="Salad">
+					<label for="ccSalad">Salad</label>
+					<input type="radio" name="Food" id="ccSeafood" value="Seafood">
+					<label for="ccSeafood">Seafood</label>
+				</div>
+				<p>Snack Options:</p>
+				<div id="snack">
+					<input type="checkbox" name="Snack" id="ccCookies" value="Cookies">
+					<label for="ccCookies">Cookies</label>
+					<input type="checkbox" name="Snack" id="ccDoritos" value="Doritos">
+					<label for="ccDoritos">Doritos</label>
+				<br>
+					<input type="checkbox" name="Snack" id="ccCandy" value="Candy">
+					<label for="ccCandy">Candy</label>
+					<input type="checkbox" name="Snack" id="ccChocolate" value="Chocolate">
+					<label for="ccChocolate">Chocolate</label>
+				<br>
+					<input type="checkbox" name="Snack" id="ccSliders" value="Sliders">
+					<label for="ccSliders">Sliders</label>
+					<input type="checkbox" name="Snack" id="ccCheezits" value="Cheezeits">
+					<label for="ccCheezits">Cheezits</label>
+				</div>
+					<label for="commBox">Do you have any Food Restrictions?</label>
+					<textarea name="custRes" id="commBox"></textarea>		
+			</fieldset>
+			<input type="submit" value="Send RSVP">
+		</form>
+	</main>
+	<footer>
+		Copyright &#169; <script> document.write(new Date()); </script>  - <a href="mailto:jj20870@georgiasouthern.edu">jj20870@georgiasouthern.edu</a>
+	</footer>
+	<script>
+		var jay = document.getElementById("orderForm");
+		jay.addEventListener("submit", rsvp);
+	</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!--
+	Assignment 5
+	Jaedon's Birthday Bash
+	Author: Jaedon Johnson
+	Date: 03/31/2021
+	Due Date: 04/15/2021
+	
+	Filename: activities.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="keywords" content="homepage, activities, wishlist, rsvp" />
+   <title>Johnson-Assign 5</title>
+   <link href="johnson_styles.css" rel="stylesheet" />
+   <script src="johnson_script.js"></script>
+ </head>
+
+<body>
+	<header>
+		<h1><img src="johnson_logo.png" alt="my logo"></h1>
+		<h1>April 10th</h1>
+	</header>
+	<nav>
+		
+			<a href="index.html">Homepage</a>
+			<a href="activities.html">Activities</a>
+			<a href="wishlist.html">Wishlist</a>
+			<a href="rsvp.html">RSVP</a>
+			<a href="index.html#faq1">Famous Birthdays</a>
+		
+	</nav>
+	<main>
+		<h2>Refreshments & Activities at party</h2>
+			<p>	When it is time for birthdays my family goes all out no matter what it is. My family has made sure me and my siblings have had the best birthdays and get togethers.</p>
+			<br class="clearfix">
+			<img src="images/club.jpg" alt="Clubhouse" id="c">
+		<h3>The Clubhouse</h3>
+			<p>The Clubhouse is referred to as a teen/adult type club nothing explicit though.
+				here we will probably get wasted, me myself i love to get cookies and cream wasted (icecream).
+				But this is one of the places i chose to get lit with family and friends for my 21st birthday.</p>
+				<br class="clearfix">
+			<img src="images/sushi.jpg" alt="Sushsi" id="s">
+		<h3>The Sushi</h3>
+			<p>This will be one of the foods served at my party because it is one of my favorite foods.
+				There will be 6 trays of different kinds of sushi including fried sushi. Also a chief to where you can make you own sushi
+				that you like or just want to try something different.</p><br class="clearfix">
+			<img src="images/crabs.jpg" alt="Crab Legs" id="cl">
+		<h3>The Crab</h3>
+			<p>This will be another food served at my party but this will be an entire buffet of different crabs.
+				All you can eat crab buffet, sounds delicious right? I think so. I have never had fried crab so why not serve it at my party
+				it sounds like something everyone would enjoy.</p><br class="clearfix">
+			<img src="images/saladbar.jpg" alt="The Salda Bar" id="tsb">
+		<h3>The Salad Bar</h3>
+			<p>I am very healthy and love eating healthy foods so yes i must have a salad bar. Salads are one of my favorite foods and is also very healthy
+				This salad bar will contain everything a regular salad bar has. Having all of your toppings and dressings to go with your delicious salad.</p><br class="clearfix">
+			<img src="images/gamingroom.jpg" alt="The Game Room" id="tgr">
+		<h3>The Gaming Room</h3>
+			<p>The game room will have a nintendo switch section for smash bros ultimate and any mario game or switch game everyone may want to play.
+				There will also be a playstation section for the ps4, and ps5 so we can play call of duty, fortnite, and mortal kombat.
+				Also there will be a PC section to play the OG halo game on PC and any popular PC game that people play.</p><br class="clearfix">
+			<img src="images/presents.jpg" alt="The Presents" id="tp">
+		<h3>The Present</h3>
+			<p>This will be the part i get to open ALL of my gifts, breath it all in and just enjoy the moment. You only live once so why not live it up and have 
+				   your best life.</p><br class="clearfix">
+	</main>
+		<footer>
+			Copyright &#169; <script> document.write(new Date()); </script>  - <a href="mailto:jj20870@georgiasouthern.edu">jj20870@georgiasouthern.edu</a>
+		</footer>
+	<script>
+		var c = document.getElementById("c");
+		var s = document.getElementById("s");
+		var cl = document.getElementById("cl");
+		var tsb = document.getElementById("tsb");
+		var tgr = document.getElementById("tgr");
+		var tp = document.getElementById("tp");
+		c.addEventListener("click", function() { activities(this.alt) })
+		s.addEventListener("click", function() { activities(this.alt) })
+		cl.addEventListener("click", function() { activities(this.alt) })
+		tsb.addEventListener("click", function() { activities(this.alt) })
+		tgr.addEventListener("click", function() { activities(this.alt) })
+		tp.addEventListener("click", function() { activities(this.alt) })
+	</script>
+</body>
+</html>		
